@@ -1,0 +1,21 @@
+.clearing{
+    background-color: #d4e100
+}
+.breaking{
+    background-color: #54a955
+}
+.returned{
+    background-color: #2b7c2c
+}
+.cancelled{
+    background-color: #f25877
+}
+.skipped{
+    background-color: #ffff00
+}
+.queued{
+    background-color: #ffffff
+}
+.front-width{
+    width: 100%
+}
