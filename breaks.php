@@ -179,11 +179,11 @@ function breaks_admin(){
         'posture_colors' => breaks_fetch_posture_colors()
     ));
     ob_start();
-    wp_enqueue_style('bootstrap', plugins_url('/public/bootstrap.min.css', __FILE__));
+    wp_enqueue_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
     wp_enqueue_style('breaks', plugins_url('/css/breaks.css', __FILE__));
-    wp_enqueue_script('boostrap-js', plugins_url('/public/bootstrap.min.js', __FILE__));
-    wp_enqueue_script('react', plugins_url('/public/react.min.js', __FILE__));
-    wp_enqueue_script('react-dom', plugins_url('/public/react-dom.min.js', __FILE__));
+    wp_enqueue_script('boostrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js');
+    wp_enqueue_script('react', 'https://unpkg.com/react@15/dist/react.min.js');
+    wp_enqueue_script('react-dom', 'https://unpkg.com/react-dom@15/dist/react-dom.min.js');
     wp_enqueue_script('breaks-admin-view', plugins_url('/js/breaks-admin-view.js', __FILE__));
     echo ob_get_clean();
 }
@@ -197,11 +197,11 @@ function breaks_form_shortcode(){
         'pods' => fetch_pods(),
     ));
     ob_start();
-    wp_enqueue_style('bootstrap', plugins_url('/public/bootstrap.min.css', __FILE__));
+    wp_enqueue_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
     wp_enqueue_style('breaks', plugins_url('/css/breaks.css', __FILE__));
-    wp_enqueue_script('boostrap-js', plugins_url('/public/bootstrap.min.js', __FILE__));
-    wp_enqueue_script('react', plugins_url('/public/react.min.js', __FILE__));
-    wp_enqueue_script('react-dom', plugins_url('/public/react-dom.min.js', __FILE__));
+    wp_enqueue_script('boostrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js');
+    wp_enqueue_script('react', 'https://unpkg.com/react@15/dist/react.min.js');
+    wp_enqueue_script('react-dom', 'https://unpkg.com/react-dom@15/dist/react-dom.min.js');
     wp_enqueue_script('breaks-form-view', plugins_url('/js/breaks-form-view.js', __FILE__));
     return ob_get_clean();
 }
@@ -224,11 +224,11 @@ function breaks_list_shortcode(){
         'posture_colors' => breaks_fetch_posture_colors(),
     ));
     ob_start();
-    wp_enqueue_style('bootstrap', plugins_url('/public/bootstrap.min.css', __FILE__));
+    wp_enqueue_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
     wp_enqueue_style('breaks', plugins_url('/css/breaks.css', __FILE__));
-    wp_enqueue_script('boostrap-js', plugins_url('/public/bootstrap.min.js', __FILE__));
-    wp_enqueue_script('react', plugins_url('/public/react.min.js', __FILE__));
-    wp_enqueue_script('react-dom', plugins_url('/public/react-dom.min.js', __FILE__));
+    wp_enqueue_script('boostrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js');
+    wp_enqueue_script('react', 'https://unpkg.com/react@15/dist/react.min.js');
+    wp_enqueue_script('react-dom', 'https://unpkg.com/react-dom@15/dist/react-dom.min.js');
     wp_enqueue_script('breaks-list-view', plugins_url('/js/breaks-list-view.js', __FILE__));
     return ob_get_clean();
 }
